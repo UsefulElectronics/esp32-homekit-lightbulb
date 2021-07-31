@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+C:/Users/Ward/Desktop/esp-idf/esp-homekit-sdk/examples/lightbulb/build/CMakeFiles/bootloader
+C:/Users/Ward/Desktop/esp-idf/esp-homekit-sdk/examples/lightbulb/build/CMakeFiles/bootloader.rule
+C:/Users/Ward/Desktop/esp-idf/esp-homekit-sdk/examples/lightbulb/build/CMakeFiles/bootloader-complete.rule
+C:/Users/Ward/Desktop/esp-idf/esp-homekit-sdk/examples/lightbulb/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+C:/Users/Ward/Desktop/esp-idf/esp-homekit-sdk/examples/lightbulb/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+C:/Users/Ward/Desktop/esp-idf/esp-homekit-sdk/examples/lightbulb/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+C:/Users/Ward/Desktop/esp-idf/esp-homekit-sdk/examples/lightbulb/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+C:/Users/Ward/Desktop/esp-idf/esp-homekit-sdk/examples/lightbulb/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+C:/Users/Ward/Desktop/esp-idf/esp-homekit-sdk/examples/lightbulb/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+C:/Users/Ward/Desktop/esp-idf/esp-homekit-sdk/examples/lightbulb/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule

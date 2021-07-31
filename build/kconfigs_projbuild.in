@@ -1,0 +1,6 @@
+source "C:/Users/Ward/Desktop/esp-idf/components/app_update/Kconfig.projbuild"
+source "C:/Users/Ward/Desktop/esp-idf/components/bootloader/Kconfig.projbuild"
+source "C:/Users/Ward/Desktop/esp-idf/components/esptool_py/Kconfig.projbuild"
+source "C:/Users/Ward/Desktop/esp-idf/components/partition_table/Kconfig.projbuild"
+source "C:/Users/Ward/Desktop/esp-idf/esp-homekit-sdk/examples/lightbulb/main/Kconfig.projbuild"
+source "C:/Users/Ward/Desktop/esp-idf/esp-homekit-sdk/examples/common/app_wifi/Kconfig.projbuild"
