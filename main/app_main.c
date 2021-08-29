@@ -105,38 +105,55 @@ static int lightbulb_write(hap_write_data_t write_data[], int count,
 {
     int i, ret = HAP_SUCCESS;
     hap_write_data_t *write;
-    for (i = 0; i < count; i++) {
+    for (i = 0; i < count; i++)
+    {
         write = &write_data[i];
         /* Setting a default error value */
         *(write->status) = HAP_STATUS_VAL_INVALID;
-        if (!strcmp(hap_char_get_type_uuid(write->hc), HAP_CHAR_UUID_ON)) {
+        if (!strcmp(hap_char_get_type_uuid(write->hc), HAP_CHAR_UUID_ON))
+        {
             ESP_LOGI(TAG, "Received Write for Light %s", write->val.b ? "On" : "Off");
-            if (lightbulb_set_on(write->val.b) == 0) {
+            if (lightbulb_set_on(write->val.b) == 0)
+            {
                 *(write->status) = HAP_STATUS_SUCCESS;
             }
-        } else if (!strcmp(hap_char_get_type_uuid(write->hc), HAP_CHAR_UUID_BRIGHTNESS)) {
+        }
+        else if (!strcmp(hap_char_get_type_uuid(write->hc), HAP_CHAR_UUID_BRIGHTNESS))
+        {
             ESP_LOGI(TAG, "Received Write for Light Brightness %d", write->val.i);
-            if (lightbulb_set_brightness(write->val.i) == 0) {
+            if (lightbulb_set_brightness(write->val.i) == 0)
+            {
                 *(write->status) = HAP_STATUS_SUCCESS;
             }
-        } else if (!strcmp(hap_char_get_type_uuid(write->hc), HAP_CHAR_UUID_HUE)) {
+        }
+        else if (!strcmp(hap_char_get_type_uuid(write->hc), HAP_CHAR_UUID_HUE))
+        {
             ESP_LOGI(TAG, "Received Write for Light Hue %f", write->val.f);
-            if (lightbulb_set_hue(write->val.f) == 0) {
+            if (lightbulb_set_hue(write->val.f) == 0)
+            {
                 *(write->status) = HAP_STATUS_SUCCESS;
             }
-        } else if (!strcmp(hap_char_get_type_uuid(write->hc), HAP_CHAR_UUID_SATURATION)) {
+        }
+        else if (!strcmp(hap_char_get_type_uuid(write->hc), HAP_CHAR_UUID_SATURATION))
+        {
             ESP_LOGI(TAG, "Received Write for Light Saturation %f", write->val.f);
-            if (lightbulb_set_saturation(write->val.f) == 0) {
+            if (lightbulb_set_saturation(write->val.f) == 0)
+            {
                 *(write->status) = HAP_STATUS_SUCCESS;
             }
-        } else {
+        }
+        else
+        {
             *(write->status) = HAP_STATUS_RES_ABSENT;
         }
         /* If the characteristic write was successful, update it in hap core
          */
-        if (*(write->status) == HAP_STATUS_SUCCESS) {
+        if (*(write->status) == HAP_STATUS_SUCCESS)
+        {
             hap_char_update_val(write->hc, &(write->val));
-        } else {
+        }
+        else
+        {
             /* Else, set the return value appropriately to report error */
             ret = HAP_FAIL;
         }

@@ -189,7 +189,7 @@ void lightbulb_init(void)
         //GPIO number
         .gpio_num = LEDC_IO_0,
         //GPIO INTR TYPE, as an example, we enable fade_end interrupt here.
-        .intr_type = LEDC_INTR_FADE_END,
+        .intr_type = LEDC_INTR_DISABLE,
         //set LEDC mode, from ledc_mode_t
         .speed_mode = LEDC_HIGH_SPEED_MODE,
         //set LEDC timer source, if different channel use one timer,
