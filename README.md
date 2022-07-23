@@ -1,9 +1,10 @@
 # ESP32 Homekit RGB LED Control 
+***
 
-[![N|Solid](https://yt3.ggpht.com/yti/APfAmoEdy_75y686J6hYGyG6wyOuJ9ZpkU0qsfouX7B5Vg=s108-c-k-c0x00ffffff-no-rj)](https://www.youtube.com/channel/UC5zdou2_vz6rjpqMJ23UnQg)
+### [Tutorial Link](https://youtu.be/KU71JmILB5k) On My [![Build Status](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UC5zdou2_vz6rjpqMJ23UnQg) Channel
 
+In this project, an RGB LED is controlled over WiFi using iPhone HomeKit app. HSB to RGB conversion model ESP32 WiFi provisioning and the way of adding new accessory to HomeKit app are discussed in details. HomeKit light bulb example is discussed line by line.
 
-The only thing that I have changed from the source code is the PWM signal resolution to make it 13 bits. Nothing is quit special in this repository other than some code organization to make it more readable for me.
+![Circuit Diagram](https://github.com/UsefulElectronics/esp32-homekit-lightbulb/tree/main/Circuit%20Diagram/Circuit%20Diagram.jpg)
 
-
-Planning to more features to this project in the future.
+***
